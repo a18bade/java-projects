@@ -1,0 +1,199 @@
+//written by bade0149 and awad0020
+
+
+1)
+
+Method: boolean add(T element)
+
+ArrayList Runtime: O(1) usually, O(n) if resizing array is needed
+
+LinkedList Runtime: O(n)
+
+Explanation:
+
+To add to the end of an array is O(1) because we have constant access.
+To add to the end of a linked list you must walk the entire list
+
+
+2)
+
+Method: boolean add(int index, T element);
+
+ArrayList Runtime: O(n-index) or O(1)
+
+LinkedList Runtime: O(index)
+
+Explanation:
+
+To add to an array list at a certian index would normally be O(1) but since we have to move the elements to the right the for loop runs for n-index times.
+
+To add to a linked list is O(index) because we need to walk to that point in the list and change pointers. No need for shifting.
+
+3)
+
+
+Method: void clear()
+
+ArrayList Runtime: O(n)
+
+LinkedList Runtime: O(1)
+
+Explanation:
+
+To clear an array list you need to loop through all values and set them to null; you could create a new array also with the same length but would that be O(1)??
+
+To clear a linked list set the head to null.
+
+4)
+
+
+Method: boolean contains(T element)
+
+ArrayList Runtime: O(n)
+
+LinkedList Runtime: O(n)
+
+Explanation:
+
+In both an arraylist and linkedlinked you need to walk the entire list.
+You can stop early if IsSorted is true.
+
+5)
+
+
+Method: T get(int index)
+
+ArrayList Runtime: O(1)
+
+LinkedList Runtime: O(index)
+
+Explanation:
+
+In an array you have constant access. In a linked list you need to walk the entire list possibly or up to the index.
+
+6)
+
+
+Method: int indexOf(T element)
+
+ArrayList Runtime: O(n)
+
+LinkedList Runtime: O(n)
+
+Explanation:
+
+In both an arraylist and linkedlinked you need to walk the entire list.
+You can stop early if IsSorted is true.
+
+7)
+
+
+Method: boolean isEmpty()
+
+ArrayList Runtime: O(1)
+
+LinkedList Runtime: O(1)
+
+Explanation:
+
+In the linked list I had a variable to keep track of the length.
+In An array list we would normally have to check the entire list but since we cant have empty slots before data. We only need to check the first element to see if its null.
+
+
+8)
+
+
+Method: int lastIndexOf(T element);
+
+ArrayList Runtime: O(n)
+
+LinkedList Runtime: O(n)
+
+Explanation:
+
+In both an arraylist and linkedlinked you need to walk the entire list.
+You can stop early if IsSorted is true.
+
+
+9)
+
+
+Method: T set(int index, T element);
+
+ArrayList Runtime: O(1)
+
+LinkedList Runtime: O(index)
+
+Explanation:
+
+We have constant access in an array list.
+We need to walk the entire list possibly O(n).
+
+10)
+
+
+Method: int size()
+
+ArrayList Runtime: O(1)
+
+LinkedList Runtime: O(1)
+
+Explanation:
+
+I had variables to keep track of length in both an arraylist and a linked list. Changed them when adding or removing an element.
+
+11)
+
+
+Method: void sort(boolean order)
+
+ArrayList Runtime: O(n^2)
+
+LinkedList Runtime: O(n^2)
+
+Explanation:
+
+I used bubble sort for both. It is sometimes O(n) if isSorted is true and order is false
+
+
+12)
+
+
+Method: boolean remove(T element)
+
+ArrayList Runtime: O(n)
+
+LinkedList Runtime: O(n)
+
+Explanation:
+
+In both an arraylist and linkedlinked you need to walk the entire list.
+You can stop early if IsSorted is true.
+
+
+13)
+
+
+Method: T remove(int index)
+
+ArrayList Runtime: O(n-index)
+
+LinkedList Runtime: O(index)
+
+Explanation:
+
+When you remove in an array you have contant access but we also needed to shift the elements to the right.
+
+In an linked list you need to walk to that node and set its next to the node after it.
+
+
+
+
+
+
+
+
+
+
+
+
